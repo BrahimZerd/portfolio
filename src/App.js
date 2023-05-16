@@ -1,57 +1,47 @@
 import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
+import { onHover } from './features/hover';
+import SlashDiv from './component/slash';
+import { Banner } from './component/banner';
 import './App.css';
+import { useState } from 'react';
+import HeroElement from './component/Hero';
+import Aside from './component/aside';
 
 function App() {
+  const [pop, SetPop] = useState(false)
+  setTimeout(() => {
+    onHover();
+  })
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Counter />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <span>
-          <span>Learn </span>
-          <a
-            className="App-link"
-            href="https://reactjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux-toolkit.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux Toolkit
-          </a>
-          ,<span> and </span>
-          <a
-            className="App-link"
-            href="https://react-redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React Redux
-          </a>
-        </span>
+     
+    <div>
+      <header >
+        <h1 id="title">
+        Brahim Zerd
+        </h1>
+        <div className='navDiv'>
+          <nav>
+            <a href='/page'>Contact</a>
+            <a href='/visualize'>visualize</a>
+          </nav>
+        </div>
       </header>
-    </div>
+      <Aside />
+      <Banner />
+      
+      {/*<HeroElement />*/}
+
+   
+      
+      
+        
+        </div>
+       
+        
+       
+          
+    
   );
 }
 
