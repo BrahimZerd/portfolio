@@ -4,8 +4,8 @@ import SlashDiv from './component/slash';
 import { Banner } from './component/banner';
 import './App.css';
 import { useState } from 'react';
-import HeroElement from './component/Hero';
 import Aside from './component/aside';
+import Project4 from './component/homepageP4';
 
 function App() {
   const [pop, SetPop] = useState(false)
@@ -18,8 +18,9 @@ function App() {
     <div>
       <header >
         <h1 id="title">
-        Brahim Zerd
+        Brahim Zerd 
         </h1>
+        <span>web 3 explorer / react developper</span>
         <div className='navDiv'>
           <nav>
             <a href='/page'>Contact</a>
@@ -29,6 +30,7 @@ function App() {
       </header>
       <Aside />
       <Banner />
+      <Project4 />
       
       {/*<HeroElement />*/}
 
