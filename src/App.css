@@ -129,7 +129,7 @@ aside{
 }
 #disparition{
 opacity: 0;
-animation: appear 7s; 
+animation: appear 2s; 
 
 }
 span {
@@ -150,8 +150,9 @@ span {
   
   border-radius: 15px;
   position: relative;
-  width: 100%;
-  height: 80%;
+  padding-left: 43px;
+  margin-top: 3px;
+  height: 470px;
   
 }
 .landingDiv img{
@@ -165,9 +166,7 @@ box-shadow: inset -1px 3px 8px 5px #1F87FF, 2px 5px 16px 0px #0B325E, 5px 5px 15
   padding: 2px;
   border:  thick double transparent;
 }
-embed{
-  margin: 55px;
-}
+
 .landingDiv a:hover {
   border:  thick double  #daa437;
   transition: 0s;
@@ -217,6 +216,9 @@ button:hover {
   position: absolute;
   right: 3%;
 
+}
+.react-multiple-carousel__arrow--right{
+  background-color: red;
 }
 
 .landingDiv span {

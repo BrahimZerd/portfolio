@@ -6,9 +6,10 @@ import { useState } from 'react';
 import Project4 from './component/homepageP4';
 import Projet5 from './component/projet5';
 import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
 import Load from './features/loader';
 import './App.css';
+import 'react-multi-carousel/lib/styles.css';
+
 
 function App() {
   const [Loading, SetLoading] = useState(false)
