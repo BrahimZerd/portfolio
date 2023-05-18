@@ -1,12 +1,15 @@
 
 body {
   font-family: 'Nanum Myeongjo', serif;
-  animation: fadeBackground 1.5s;
-  animation-fill-mode: forwards;
+  /*animation: fadeBackground 1.5s;*/
+  height: 100%;
+  
+
+  /*animation-fill-mode: forwards;
   background: #CE5937;
-  background: -moz-linear-gradient(left, #e4e3ee 0%, #fff 65%, #fff 100%);
+ /* background: -moz-linear-gradient(left, #e4e3ee 0%, #fff 65%, #fff 100%);
   background: linear-gradient(to right, #e4e3ee 0%, #fff 65%, #fff 100%);
-}
+} */}
 
 
 
@@ -24,7 +27,7 @@ header {
   border-bottom: solid 1px;
 }
 h1 {
-  margin: 0 0 0px 33.9vw;  
+   margin-left: 7.9vw; 
   color: #67648E;
   font-weight: 100;
   
@@ -71,21 +74,34 @@ header a:hover {
 }
 
 .banner {
-  margin: 0 auto;
-  
-  animation: fadeIn 10s; 
+  z-index: 100;
+  height: 100vh;
+ 
+  animation: fadeIn 10s;
+ 
+
+
 
 }
+
 #logo {
+  height: 100vh;
+
+  transform: translateY(500px);
+  transition: all 2s;
+
+  opacity: 1;
+
   z-index: 10;
 }
 
 .banner img {
+  width:101.5%;
+
+  margin-left: -20px;
+  object-fit: contain;
   
   
-  width: 30px;
-  border-radius: 50%;
-  height: 30px;
 }
 
 aside{
@@ -100,39 +116,123 @@ aside{
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 20px;
 }
+.carousel-container{
+  margin: auto;
+  background-color: #b3d0cc;
+  overflow:visible;
+  height: 550px;
+  width: 85%;
+  border-radius: 15px;
+  margin-top: 15vh;
+  
+  
+}
+#disparition{
+opacity: 0;
+animation: appear 7s; 
+
+}
 span {
   animation: fadeIn 10s; 
 
 }
+.react-multi-carousel-item{
+ margin-left: 15vw;
+
+ 
+}
+
 .landingDiv {
-  background: -moz-linear-gradient(left, #e4e3ee 0%, #fff 85%, #fff 100%);
-  background: linear-gradient(to right, #e4e3ee 0%, #fff 85%, #fff 100%);
-  width: 35vw;
-  height: 35vh;
-  margin: 0 auto;
-  margin-top: 5%;
+  transition: ease-in-out 2s;
+  background: -moz-linear-gradient(left, #727e6a 0%, #1f2b13 65%, #fff 100%);
+  background: linear-gradient(to right, #727e6a 0%, #1f2b13 65%, #fff 100%);
+  
+  
+  border-radius: 15px;
+  position: relative;
+  width: 100%;
+  height: 80%;
+  
 }
 .landingDiv img{
   height:350px;
   width: 450px;
+  -webkit-box-shadow: inset -1px 3px 8px 5px #1F87FF, 2px 5px 16px 0px #0B325E, 5px 5px 15px 5px rgba(0,0,0,0); 
+box-shadow: inset -1px 3px 8px 5px #1F87FF, 2px 5px 16px 0px #0B325E, 5px 5px 15px 5px rgba(0,0,0,0);
+ 
 }
 .landingDiv a{
   padding: 2px;
+  border:  thick double transparent;
+}
+embed{
+  margin: 55px;
 }
 .landingDiv a:hover {
-  border: solid 1px #67648E;
+  border:  thick double  #daa437;
+  transition: 0s;
+  transform: none;
 
 }
+
+button:hover {
+  cursor: pointer;
+  border:  thick double  #daa437;
+  
+}
+.landingDiv:hover {
+  background: linear-gradient(to right, #284c4c 10%, #fff 65%, #E2D9B3 100%);
+
+}
+.landingDiv a:hover, embed:hover {
+  border:  thick double  #daa437;
+  transition: 0s;
+  transform: none;
+
+}
+ .landingDiv button{
+  display: block;
+  width: 55px;
+  height: 30px;
+  background: linear-gradient(to right, #284c4c 10%, #fff 65%, #E2D9B3 100%);
+ border: none;
+ border-radius: 25px;
+ position: absolute;
+ bottom: 4%;
+ left: 42%;
+ 
+}
+
+button:hover {
+  cursor: pointer;
+  border:  thick double  #daa437;
+  
+  
+}
+.react-multiple-carousel__arrow--left:hover{
+ left: 3%;
+}
+.react-multiple-carousel__arrow--right:hover{
+  cursor: pointer;
+  position: absolute;
+  right: 3%;
+
+}
+
 .landingDiv span {
   font-size: 18px;
-  color:#67648E;
+  color:#012b3b;
   padding: 12px;
   display: inline-block;
   position: absolute;
   margin-left: 3%;
  
 }
-
+.group {
+  display: flex;
+  margin: 5vw;
+  padding-left: 29vw;
+}
 
 @keyframes fadeIn {
   0% { opacity: 0; }
@@ -143,3 +243,14 @@ span {
   from { background-color: #67648E; }
   to { background-color: #fff; }
 }
+
+
+@keyframes appear {
+ 0% { opacity: 0; }
+ 80% { opacity: .5; }
+ 100%{opacity: 1}
+}
+
+
+
+

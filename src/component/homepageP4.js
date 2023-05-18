@@ -7,6 +7,7 @@ export default function Project4 () {
             <span>Landing Page</span>
             <a href={P4img}>
             <img src={P4img} alt="homepage P4" />
+            <button >Go ! </button>
             </a>
         </div>
     )
