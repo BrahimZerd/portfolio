@@ -6,7 +6,7 @@ export function Banner () {
     return (
         <div className="banner" id="logo">
            <img
-    src="logo-color.svg"
+    src="logo-no-background.svg"
     alt="logo"
      /> 
             

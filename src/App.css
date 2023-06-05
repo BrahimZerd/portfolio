@@ -1,9 +1,10 @@
 
-body {
-  font-family: 'Nanum Myeongjo', serif;
+ html {
+  font-family: 'B Myeongjo', serif;
   /*animation: fadeBackground 1.5s;*/
   height: 100%;
-  
+  background: linear-gradient(113.49deg, #984D38 -30.3%, #181E41 58.12%);  
+  overflow-x: hidden;
 
   /*animation-fill-mode: forwards;
   background: #CE5937;
@@ -18,33 +19,66 @@ header {
  display: flex;
   height: 5vh;
   align-items: center;
-  justify-content:space-between;
-  color:#67648E;
-  
-  
-  font-size: 1vh;
+justify-content: space-between;
+
+  color:#E5E5E5;
+  letter-spacing: 3px;
   font-family: 'Nanum Myeongjo', serif;
-  border-bottom: solid 1px;
-}
-h1 {
-   margin-left: 7.9vw; 
-  color: #67648E;
-  font-weight: 100;
+ position: relative;
   
 }
-h1:hover {
-  transform: translateX(150px); 
-  transition: ease-in-out 3s;
+
+
+h1 {
+   color:#E5E5E5;
+   font-weight: 100;
+   
+   font-family: 'Nanum Myeongjo', serif;
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+
+  
 }
+.logoH {
+  border: solid 1px #E5E5E5;
+  text-shadow: 4px 4px;
+  text-align: center;
+  font-size: x-large;
+  border-radius: 50%;
+  line-height: 27px;
+  margin-top: 9.4%;
+  margin-right: 4%;
+  display: block;
+  width: 26px;
+  height: 26px;
+  font-weight: 100;
+  padding: 7px;
+  padding-bottom: 7px;
+}
+.blockspan {
+  transform: rotate(270deg);
+  margin-left: 5%;
+  letter-spacing: 55px;
+  opacity: .4;
+}
+.blockTitle {
+  display: flex;
+  text-align: left;
+  width: 250px;
+  margin-left: 5%;
+  justify-content: center
+}
+
+
 a {
   text-decoration: none;
   display: inline-block;
-  margin: 55px;
+
+  margin: 25px;
   padding: 5px;
-  font-size: 2vh;
+  font-size: 18px;
+  border: solid 1px transparent;
   transition: .6s ease-in-out;
-  color:#67648E;
-  border: solid 1px white;
+  color:#E5E5E5;
   border-top: unset;
   border-bottom: unset;
  
@@ -52,53 +86,57 @@ a {
 span {
   font-size: 3vh;
 }
-header a:hover {
+ .mainNav a:hover {
   border-radius: 5px;
   transition: .4s ease-in-out;
   transition-delay: .2s;
-  border: solid 1px #3f34d6;
+  border: solid 1px #fff;
+  cursor: pointer;
   border-top: unset;
   border-bottom: unset;
 }
+
+.mainNav a {
+  width:max-content;
+
+}
 .heroSection {
-  height: 35vh;
-  
-  font-size: xx-large;
-  font-family: 'Nanum Myeongjo', serif;
-  margin: 0 auto;
-  line-height: 35vh;  
-  border-bottom: solid 1px black;
-  display: flex;
-  
-  justify-content: center;
+
+ animation: bord 7s;
+ width: 70.8%;
+ left:15%;
+ text-align: left;
+ top: 15%;
+ position: absolute;
+ color: #E5E5E5;
+ font-size: xx-large;
+ margin: 0 auto;
 }
 
 .banner {
   z-index: 100;
   height: 100vh;
- 
+   background: transparent;
+
   animation: fadeIn 10s;
- 
-
-
-
-}
-
+ }
+ .banner:hover {
+  cursor: pointer;
+ }
 #logo {
-  height: 100vh;
-
   transform: translateY(500px);
-  transition: all 2s;
+  transition: all 8s;
 
   opacity: 1;
-
   z-index: 10;
 }
 
 .banner img {
-  width:101.5%;
+  border-top-left-radius: 158%;
+  border-bottom-right-radius: 258%;
 
-  margin-left: -20px;
+  width:100%;
+
   object-fit: contain;
   
   
@@ -118,16 +156,17 @@ aside{
 }
 .carousel-container{
   margin: auto;
-  background-color: #b3d0cc;
   overflow:visible;
+  border: solid 1px #E5E5E5;
   height: 550px;
-  width: 85%;
+  width: 55%;
   border-radius: 15px;
   margin-top: 15vh;
   
   
 }
 #disparition{
+  display: none;
 opacity: 0;
 animation: appear 2s; 
 
@@ -144,8 +183,6 @@ span {
 
 .landingDiv {
   transition: ease-in-out 2s;
-  background: -moz-linear-gradient(left, #727e6a 0%, #1f2b13 65%, #fff 100%);
-  background: linear-gradient(to right, #727e6a 0%, #1f2b13 65%, #fff 100%);
   
   
   border-radius: 15px;
@@ -155,15 +192,15 @@ span {
   height: 470px;
   
 }
-.landingDiv img{
+.landingDiv img,embed{
   height:350px;
   width: 450px;
   -webkit-box-shadow: inset -1px 3px 8px 5px #1F87FF, 2px 5px 16px 0px #0B325E, 5px 5px 15px 5px rgba(0,0,0,0); 
 box-shadow: inset -1px 3px 8px 5px #1F87FF, 2px 5px 16px 0px #0B325E, 5px 5px 15px 5px rgba(0,0,0,0);
  
 }
-.landingDiv a{
-  padding: 2px;
+.landingDiv a, embed{
+  
   border:  thick double transparent;
 }
 
@@ -193,7 +230,6 @@ button:hover {
   display: block;
   width: 55px;
   height: 30px;
-  background: linear-gradient(to right, #284c4c 10%, #fff 65%, #E2D9B3 100%);
  border: none;
  border-radius: 25px;
  position: absolute;
@@ -208,6 +244,7 @@ button:hover {
   
   
 }
+
 .react-multiple-carousel__arrow--left:hover{
  left: 3%;
 }
@@ -217,10 +254,20 @@ button:hover {
   right: 3%;
 
 }
-.react-multiple-carousel__arrow--right{
-  background-color: red;
-}
 
+
+.mainNav {
+  z-index: 10;
+  display: flex;
+
+  flex-direction: column;
+  margin-top: 6% ;
+  padding-bottom:6%;
+  text-align: center;
+
+  color:#E5E5E5;
+  border-right: solid 1px;
+}
 .landingDiv span {
   font-size: 18px;
   color:#012b3b;
@@ -235,6 +282,152 @@ button:hover {
   margin: 5vw;
   padding-left: 29vw;
 }
+.social-buttons {
+  display: flex;
+  
+  border-left: solid 1px #E5E5E5;
+  position: absolute;
+  top: 15%;
+  right: 2%;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.social-button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  width: 32px;
+  height: 32px;
+  text-decoration: none;
+  border-radius: 100%;
+  background: #b3d0cc;
+  text-align: center;
+}
+.backgroundContact {
+}
+.positionz{
+  position: absolute;
+  z-index: 100;
+  opacity: 0;
+  width: 105px;
+  height: 55px;
+  left: 3%;
+  top: 58%;
+
+
+}
+.social-buttons:hover {
+}
+.social-button::after {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: 49%;
+  display: block;
+  width: 0;
+  height: 0;
+  border-radius: 100%;
+  transition: 0.2s;
+}
+.social-button:focus, .social-button:hover {
+  color: #fff;
+
+}
+.social-button:focus::after, .social-button:hover::after {
+  width: calc(115%);
+  height: calc(115%);
+
+  margin-left: calc(-52.9% );
+}
+.social-button i,
+.social-button svg {
+  margin-left: 2px;
+
+  position: relative;
+  z-index: 1;
+  transition: 0.3s;
+}
+.social-button i {
+  font-size: 25.6px;
+}
+.social-button svg {
+  height: 40%;
+  width: 40%;
+}
+.social-button--mail {
+  color: #0072c6;
+}
+.social-button--mail::after {
+  background: linear-gradient(113.49deg, #984D38 -30.3%, #181E41 58.12%);  
+}
+.social-button--facebook {
+  color: #3b5999;
+}
+.social-button--facebook::after {
+  border: solid 1px black;
+
+  background: linear-gradient(113.49deg, #984D38 -30.3%, #181E41 58.12%);  
+}
+.social-button--linkedin {
+  color: #0077b5;
+}
+.social-button--linkedin::after {
+  border: solid 1px black;
+
+  background: linear-gradient(113.49deg, #984D38 -30.3%, #181E41 58.12%);  
+}
+.social-button--github {
+  color: #6e5494;
+}
+.social-button--github::after {
+  border: solid 1px black;
+
+  background: linear-gradient(113.49deg, #984D38 -30.3%, #181E41 58.12%);  
+}
+.social-button--codepen {
+  color: #212121;
+}
+.social-button--codepen::after {
+  border: solid 1px black;
+
+  background: linear-gradient(113.49deg, #984D38 -30.3%, #181E41 58.12%);  
+}
+.social-button--steam {
+  color: #7da10e;
+}
+.social-button--steam::after {
+  background: linear-gradient(113.49deg, #984D38 -30.3%, #181E41 58.12%);  
+}
+.social-button--snapchat {
+  color: #eec900;
+}
+.social-button--snapchat::after {
+  background: linear-gradient(113.49deg, #984D38 -30.3%, #181E41 58.12%);  
+  border: solid 1px black;
+}
+.social-button--twitter {
+  color: #55acee;
+}
+.social-button--twitter::after {
+  background: #55acee;
+}
+.social-button--instagram {
+  color: #e4405f;
+}
+.social-button--instagram::after {
+  background: #e4405f;
+}
+.social-button--npmjs {
+  color: #c12127;
+}
+.social-button--npmjs::after {
+  background: #c12127;
+}
+
 
 @keyframes fadeIn {
   0% { opacity: 0; }
@@ -251,6 +444,11 @@ button:hover {
  0% { opacity: 0; }
  80% { opacity: .5; }
  100%{opacity: 1}
+}
+
+@keyframes bord {
+  0% {border: none}
+  100%{border: solid 1px black}
 }
 
 

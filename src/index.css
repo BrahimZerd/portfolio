@@ -1,4 +1,144 @@
+.react-multiple-carousel__arrow--right::before{
+    content: "";
+    background-image: url('assets/profil.png') !important;
+    background-size: 50px 50px;
+    width: 50px; 
+    height: 50px;
+    transform: rotateY(180deg);
+
+    display: inline-block;
+    border-radius: 50%;
+
+ }
+ .react-multiple-carousel__arrow--left::before{
+    content: "";
+    background-image: url('assets/profil.png') !important;
+    background-size: 50px 50px;
+    width: 50px; 
+    height: 50px;
+    display: inline-block;
+    border-radius: 50%;
+
+ }
+ .pre {
+
+   display: flex;
+   font-size: xx-large;
+   color:transparent;
+   margin-top: 5%;
+   color: #e5e5e5;
+ }
+ .pre svg {
+  font-weight: 100;
+  white-space: pre-wrap;
+}
+ .pre p {
+   margin-top: 105px;
+   margin-right: 250px;
+ }
+ .box {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  opacity: .6;
+  border-top-left-radius: 75px;
+  border-bottom-right-radius: 75px;
+  left:-1099px;
+  background: transparent;
+  top:01%;
+  border: transparent solid 1px;
+
+ 
+ }
+ 
+ 
+ .box span {
+   margin-left: 25px;
+   display: block;
+   font-size: 25px;
+   line-height: 75px;
+  
+ }
+ .box:hover {
+  opacity: 1;
+  border: #fff solid 1px;
+
+   background: linear-gradient(113.49deg, #a76958 -30.3%, #3344a1 58.12%); 
+   border: solid 1px; 
+   cursor: pointer;
+   box-shadow: rgba(214, 208, 208, 0.07) 0px 1px 2px, rgba(236, 228, 228, 0.07) 0px 2px 4px, rgba(231, 230, 230, 0.07) 0px 4px 8px, rgba(228, 222, 222, 0.07) 0px 8px 16px, rgba(248, 243, 243, 0.07) 0px 16px 32px, rgba(233, 229, 229, 0.07) 0px 32px 64px;
+   
+}
 
 
+ .boxes {
+   font-size: 25px;
+   display: flex;
+   margin-top: 5%;
+   flex-direction: column;
+   justify-content: space-between;
+ }
+ .box img {
+  opacity: 0;
+  border-bottom-right-radius: 75px;
+  display: block;
+  margin: 0 auto;
+  margin-right: 27%;
+  width: 100px;
+  height: 100px;
+ }
+ .box img:hover {
+ 
+ 
+ transition: all 2s ease-in-out;
+  opacity: 1;
+ }
+ .blockspan {
+   display: block;
+   font-size: xx-large;
+   font-weight: 600;
+ }
+ #hello {
+  position: absolute;
+  width: 90px;
+  animation:  3s linear 0s appear;
+  text-align: center;
+  border-radius: 70px;
+  border-bottom-right-radius: 0px;
+  line-height: 75px;
+  height: 75px;
+  border: solid 1px #e5e5e5;
+  left: 17%;
+  top: 10%;
+ }
+ .try {
+  transition: 12s linear 0s run;
+  animation: linear;
+  animation-name: run;
+  animation-duration: 13s;
 
 
+}
+ @keyframes appear {
+  0% { opacity: 0; }
+  80% { opacity: .5; }
+  100%{opacity: 1}
+ }
+
+ @keyframes run {
+  0% {
+    fill: transparent;
+    left:10%;
+  }
+  
+  50% {
+    fill: white;
+    left: 50%;
+
+  }
+  100% {
+    fill: white;
+    left: 100%;
+
+  }
+}
