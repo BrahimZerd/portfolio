@@ -14,20 +14,23 @@ export default function Pres () {
     return(
         <div className="pre">
             <span className='blockspan'>BRAHIM</span>
-            <svg width="900" height="600" x='200'>
- { !isHoverd? <text  fill="transparent" font-size="60" x="0" y="0" text-anchor="middle" stroke="white">
-  <tspan x="233" dy="3.2em">web developper</tspan>
-  <tspan x="483" dy="1.2em">based in France</tspan>
-
-  </text> :
-  <text className='try' fill="white" font-size="60" x="0" y="0" text-anchor="middle" stroke="white">
-  <tspan x="233" dy="3.2em">web developper</tspan>
-  <tspan x="483" dy="1.2em">based in France</tspan>
-
-  </text>
+            
+ 
+ <div className='paragraphe'>
+  <p> 
+    Hello i'm Brahim, this is my website.<br/><br/>
+    Just finished my learning in React front development, i made this website to show you my skills, present myself & my vision of work.<br/><br/>
+    Totally focus in web 3 projects, i'm actually learning back-end technologies to permit me to setup a full website by myself.
   
-  }
-</svg>
+
+    </p>
+      <span> Enjoy!  </span> 
+
+  </div>
+ 
+  
+  
+
             
             <div className="boxes">
 
@@ -42,11 +45,7 @@ export default function Pres () {
                 </div>
                 
     </div>
-        <div className='forme'
-        ></div>
-        {isHoverd && (
-        <p id='hello' >hello</p>
-        )}
+       
         
         
         </div>

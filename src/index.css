@@ -119,6 +119,18 @@
 
 
 }
+
+.paragraphe , .paragraphe span{
+  height: fit-content;
+  opacity: .7;
+white-space:pre-line;
+font-size: 24px;
+  width: 37vw;
+ position: absolute;
+ right: 0;
+
+}
+
  @keyframes appear {
   0% { opacity: 0; }
   80% { opacity: .5; }
